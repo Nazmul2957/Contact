@@ -34,15 +34,15 @@ public class Register_Activity extends AppCompatActivity {
         reg_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (TextUtils.isEmpty(reg_full_name_et.getText())){
+                if (TextUtils.isEmpty(reg_full_name_et.getText())) {
                     reg_full_name_et.setError("Please give your name!");
-                } else if (TextUtils.isEmpty(reg_email_et.getText())){
+                } else if (TextUtils.isEmpty(reg_email_et.getText())) {
                     reg_email_et.setError("Please give your email!");
-                } else if (TextUtils.isEmpty(reg_phone_number_et.getText())){
+                } else if (TextUtils.isEmpty(reg_phone_number_et.getText())) {
                     reg_phone_number_et.setError("Please give your mobile!");
-                } else if (TextUtils.isEmpty(reg_password_et.getText())){
+                } else if (TextUtils.isEmpty(reg_password_et.getText())) {
                     reg_password_et.setError("Please give your password!");
-                } else if (!reg_password_et.getText().toString().trim().equals(reg_confirm_password_et.getText().toString().trim())){
+                } else if (!reg_password_et.getText().toString().trim().equals(reg_confirm_password_et.getText().toString().trim())) {
                     Toast.makeText(Register_Activity.this, "Password are not same", Toast.LENGTH_SHORT).show();
                 } else {
                     setUserDetails();
@@ -60,8 +60,8 @@ public class Register_Activity extends AppCompatActivity {
 
         Toast.makeText(Register_Activity.this, "Registration Successfull", Toast.LENGTH_SHORT).show();
 
-        Log.d("login", "email "+SharedPrefManager.getInstance(Register_Activity.this).getEmail());
-        Log.d("login", "email "+SharedPrefManager.getInstance(Register_Activity.this).getPassword());
+        Log.d("login", "email " + SharedPrefManager.getInstance(Register_Activity.this).getEmail());
+        Log.d("login", "email " + SharedPrefManager.getInstance(Register_Activity.this).getPassword());
 
         Intent intent = new Intent(Register_Activity.this, MainActivity.class);
         startActivity(intent);

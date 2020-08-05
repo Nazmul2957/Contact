@@ -28,15 +28,15 @@ public class MainActivity extends AppCompatActivity {
         create_new_account = findViewById(R.id.create_new_account);
         login_btn = findViewById(R.id.login_btn);
 
-        Log.d("login", "email "+SharedPrefManager.getInstance(MainActivity.this).getEmail());
-        Log.d("login", "email "+SharedPrefManager.getInstance(MainActivity.this).getPassword());
+        Log.d("login", "email " + SharedPrefManager.getInstance(MainActivity.this).getEmail());
+        Log.d("login", "email " + SharedPrefManager.getInstance(MainActivity.this).getPassword());
 
 
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (SharedPrefManager.getInstance(MainActivity.this).getEmail() != null){
-                    if (login_email_et.getText().toString().trim().equals(SharedPrefManager.getInstance(MainActivity.this).getEmail().toString()) && login_password_et.getText().toString().trim().equals(SharedPrefManager.getInstance(MainActivity.this).getPassword())){
+                if (SharedPrefManager.getInstance(MainActivity.this).getEmail() != null) {
+                    if (login_email_et.getText().toString().trim().equals(SharedPrefManager.getInstance(MainActivity.this).getEmail().toString()) && login_password_et.getText().toString().trim().equals(SharedPrefManager.getInstance(MainActivity.this).getPassword())) {
                         Toast.makeText(MainActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(MainActivity.this, "Please ensure your email and password", Toast.LENGTH_SHORT).show();
@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
     }

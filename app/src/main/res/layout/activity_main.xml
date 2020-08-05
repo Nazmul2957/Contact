@@ -66,6 +66,7 @@
                         android:src="@drawable/ic_group" />
 
                     <EditText
+                        android:id="@+id/login_email_et"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_below="@+id/text"
@@ -120,6 +121,7 @@
 
 
                     <EditText
+                        android:id="@+id/login_password_et"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_below="@+id/text2"
@@ -163,6 +165,7 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/login_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -173,6 +176,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/create_new_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

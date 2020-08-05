@@ -61,6 +61,7 @@
                         android:src="@drawable/ic_group" />
 
                     <EditText
+                        android:id="@+id/reg_full_name_et"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_below="@+id/text"
@@ -115,12 +116,13 @@
 
 
                     <EditText
+                        android:id="@+id/reg_email_et"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_below="@+id/text2"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/editext_shape"
-                        android:inputType="textPassword"
+                        android:inputType="textEmailAddress"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -168,12 +170,13 @@
 
 
                     <EditText
+                        android:id="@+id/reg_phone_number_et"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_below="@+id/text2"
                         android:layout_marginTop="10dp"
                         android:background="@drawable/editext_shape"
-                        android:inputType="textPassword"
+                        android:inputType="number"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -221,6 +224,7 @@
 
 
                     <EditText
+                        android:id="@+id/reg_password_et"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_below="@+id/text2"
@@ -274,6 +278,7 @@
 
 
                     <EditText
+                        android:id="@+id/reg_confirm_password_et"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_below="@+id/text2"
@@ -297,6 +302,7 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/reg_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign Up"

@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.example.contact.SharedPrefManager.SharedPrefManager;
 
 public class MainActivity extends AppCompatActivity {
-    EditText login_password_et,login_email_et;
+    EditText login_password_et, login_email_et;
     LinearLayout create_new_account;
     Button login_btn;
 
